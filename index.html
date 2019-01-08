@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <script>
+        let age = +prompt( "Сколько Вам лет?", "" );
+        if ((age>=18 && age<=40) || (age>=50 && age<=70)) {
+            console.log( "Вход разрешен" );
+        }
+        else {
+            console.log( "вход воспрещен" );
+        }
+        
+
+        let door = prompt( "Дверь открыта?", "" );
+        let alarm = prompt( "сигнализация вкл?", "" );
+        if (door === "да") {
+            if (alarm === "да") {
+                console.log( "тревога!!!" );
+            }
+            else if (alarm === "нет") {
+                console.log( "тревоги нету" );
+            }
+            else {
+                console.log( "данные не корректны" );
+            }
+        }
+        else if (door === "нет") {
+            if (alarm === "нет") {
+                console.log( "тревоги нету" );
+            }
+            else if (alarm === "да") {
+                console.log( "тревога!!!" );
+            }
+            else {
+                console.log( "данные не корректны" );
+            }
+        }
+        else {
+            console.log( "данные не корректны" );
+        }
+    </script>
+</body>
+</html>
